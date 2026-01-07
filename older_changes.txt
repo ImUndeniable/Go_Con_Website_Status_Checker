@@ -1,0 +1,13 @@
+//URLS
+	//urls := []string{"https://www.youtube.com", "https://www.google.com", "https://www.linkedin.com", "https://www.naukri.com"}
+	//Opening the file
+
+
+for i := range urls {
+	url := Job{
+		URL: urls[i],
+	}
+	jobs <- url
+}
+close(jobs)
+
